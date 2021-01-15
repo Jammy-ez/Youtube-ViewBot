@@ -7,7 +7,7 @@ from colorama import Fore, Back, Style
 def clear():
         _ = system('cls')
 print(Fore.RED + '''
-            Youtube view bot made by jame
+            Youtube view bot made by jam
              ________________________________________________
             /                                                \
            |    _________________________________________     |
@@ -76,7 +76,7 @@ if optionfirst == '1':
     time.sleep(1)
     clear()
     print(Fore.RED + '''
-            Youtube view bot made by jame
+            Youtube view bot made by jam
 
 
              ________________________________________________
@@ -175,7 +175,7 @@ if optionfirst == '2':
     time.sleep(1)
     clear()
     print(Fore.RED + '''
-            Youtube view bot made by jame
+            Youtube view bot made by jam
 
 
              ________________________________________________
