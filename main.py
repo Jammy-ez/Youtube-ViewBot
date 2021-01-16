@@ -4,6 +4,7 @@ from selenium.webdriver.common.by import By
 import time
 from os import system, name
 from colorama import Fore, Back, Style
+from pyvirtualdisplay import Display
 def clear():
         _ = system('cls')
 print(Fore.RED + '''
@@ -51,11 +52,14 @@ if optionfirst == '1':
     VIEWDELAY = float(VIEWDELAY)
     time.sleep(1)
     print("Settup up varibles")
-    browser1 = webdriver.Chrome()
-    browser2 = webdriver.Chrome()
-    browser3 = webdriver.Chrome()
-    browser4 = webdriver.Chrome()
-    browser5 = webdriver.Chrome()
+    chrome_options = webdriver.ChromeOptions()
+    chrome_options.add_argument("--mute-audio")
+    chrome_options.add_argument("--headless")
+    browser1 = webdriver.Chrome(chrome_options=chrome_options)
+    browser2 = webdriver.Chrome(chrome_options=chrome_options)
+    browser3 = webdriver.Chrome(chrome_options=chrome_options)
+    browser4 = webdriver.Chrome(chrome_options=chrome_options)
+    browser5 = webdriver.Chrome(chrome_options=chrome_options)
     time.sleep(1)
     print("Drivers getting link...")
     browser1.get(URL)
@@ -131,9 +135,12 @@ if optionfirst == '2':
     proxie1 = input("Eneter proxie: ")
     time.sleep(1)
     print("Settup up varibles")
+
     #browser 1
     chrome_options = webdriver.ChromeOptions()
     chrome_options.add_argument('--proxy-server=%s' % proxie1)
+    chrome_options.add_argument("--mute-audio")
+    chrome_options.add_argument("--headless")
     browser1 = webdriver.Chrome(chrome_options=chrome_options)
     #browser 2
     browser2 = webdriver.Chrome(chrome_options=chrome_options)
