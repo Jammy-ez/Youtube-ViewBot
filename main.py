@@ -4,11 +4,16 @@ from selenium.webdriver.common.by import By
 import time
 from os import system, name
 from colorama import Fore, Back, Style
-from pyvirtualdisplay import Display
+from tqdm import tqdm 
+for i in tqdm (range (101),  
+               desc=Fore.RED + "",  
+               ascii=False, ncols=100): 
+    time.sleep(0.01) 
 def clear():
         _ = system('cls')
+clear()
 print(Fore.RED + '''
-            Youtube view bot made by jam
+            Made by Jam#4613
 
  ▄· ▄▌      ▄• ▄▌▄▄▄▄▄▄• ▄▌▄▄▄▄· ▄▄▄ .     ▌ ▐·▪  ▄▄▄ .▄▄▌ ▐ ▄▌    ▄▄▄▄·       ▄▄▄▄▄
 ▐█▪██▌▪     █▪██▌•██  █▪██▌▐█ ▀█▪▀▄.▀·    ▪█·█▌██ ▀▄.▀·██· █▌▐█    ▐█ ▀█▪▪     •██  
@@ -62,7 +67,7 @@ if optionfirst == '1':
     time.sleep(1)
     clear()
     print(Fore.RED + '''
-            Youtube view bot made by jam
+            Jam#4613
 
  ▄· ▄▌      ▄• ▄▌▄▄▄▄▄▄• ▄▌▄▄▄▄· ▄▄▄ .     ▌ ▐·▪  ▄▄▄ .▄▄▌ ▐ ▄▌    ▄▄▄▄·       ▄▄▄▄▄
 ▐█▪██▌▪     █▪██▌•██  █▪██▌▐█ ▀█▪▀▄.▀·    ▪█·█▌██ ▀▄.▀·██· █▌▐█    ▐█ ▀█▪▪     •██  
@@ -116,7 +121,7 @@ if optionfirst == '2':
     time.sleep(1)
     clear()
     print(Fore.RED + '''
-            Youtube view bot made by jam
+            Jam#4613
 
  ▄· ▄▌      ▄• ▄▌▄▄▄▄▄▄• ▄▌▄▄▄▄· ▄▄▄ .     ▌ ▐·▪  ▄▄▄ .▄▄▌ ▐ ▄▌    ▄▄▄▄·       ▄▄▄▄▄
 ▐█▪██▌▪     █▪██▌•██  █▪██▌▐█ ▀█▪▀▄.▀·    ▪█·█▌██ ▀▄.▀·██· █▌▐█    ▐█ ▀█▪▪     •██  
